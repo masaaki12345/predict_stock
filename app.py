@@ -14,7 +14,7 @@ st.title('AIで株価予想アプリ')
 st.write('AIを使って株価を予想してみましょう')
 
 image = Image.open('stock_predict.png')
-st.image(image,use_column_width=True)
+st.image(image,use_container_width=True)
 
 
 st.write('あくまでAIによる予想です（参考値）。こちらのアプリによる損害や損失は一切補償しかねます。')
