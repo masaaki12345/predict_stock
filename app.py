@@ -96,7 +96,8 @@ try:
         for data in predicted_data:
             next_date = datetime.datetime.fromtimestamp(next_unit)
             next_unit += one_day
-            df_stock.loc[next_date] = np.append([np.nan] * (len(df_stock.columns)-1),data)
+            df_stock.loc[next_date, 'Predict'] = data
+
 
 
         df_stock['Close'].plot(figsize=(15,6),color='green')
